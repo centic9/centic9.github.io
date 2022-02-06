@@ -1,6 +1,6 @@
 ## Development Status
 
-The various repositories also have their own issue tracker to follow and discuss development of these specific components. Here's the status of all repositories:
+This table lists failing tests, issues and pull-requests in some of the repositories that I contribute to on a regular basis.
 
 | Repository                                                                                        | Tests                                                                                                                                                                    | Open issues                                                                                                                                                               | Open pull requests                                                                                                                                                                 |
 | ----------                                                                                        | -----                                                                                                                                                                    | -----------                                                                                                                                                               | ------------------                                                                                                                                                                 |
