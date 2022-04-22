@@ -1,0 +1,31 @@
+---
+layout: default
+title: Dominik Stadler's Repositories
+---
+<h1>{{ page.title }}</h1>
+<p>Last updated at: {{ site.time }}</p>
+{% assign totalStars = 0 %}
+{% assign totalForks = 0 %}
+{% assign repos = site.github.public_repositories %}
+{% for repo in repos %}
+  {% assign totalStars = totalStars | plus: repo.stargazers_count %}
+  {% assign totalForks = totalForks | plus: repo.forks_count %}
+{% endfor %}
+<p>
+Total received stars for repos: {{ totalStars }}<br>
+Total forks from repos: {{ totalForks }}
+</p>
+<a class="github-button" href="https://github.com/centic9" data-size="large" data-show-count="true" aria-label="Follow @centic9 on GitHub">Follow @centic9</a>
+<ul>
+{% assign repos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
+{% for repo in repos %}
+  <li><a href="{{ repo.html_url }}">{{ repo.name }}</a>
+    {% if repo.description %}
+       <br>{{ repo.description }}
+    {% endif %}
+    <br>Stars: {{ repo.stargazers_count }} | Forks: {{ repo.forks_count }}
+  </li>
+{% endfor %}
+</ul>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
