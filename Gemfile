@@ -1,5 +1,6 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'execjs'
-gem 'therubyracer'
-gem 'github-pages'
+source "https://rubygems.org"
+
+gemspec
+
