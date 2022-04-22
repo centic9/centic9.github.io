@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: My website
+title: Centic's Website
 
 # Short description of your site
 description: A virtual proof that I'm awesome
@@ -19,7 +19,7 @@ repository: "VincentTam/beautiful-jekyll"
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # Your name to show in the footer
-author: Some Person
+author: Dominik Stadler
 
 # --- List of links in the navigation bar --- #
 
@@ -28,7 +28,7 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Repositories: "/repositories/index.html"
 
 # --- Logo --- #
 
@@ -50,11 +50,11 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  #facebook: deanattali
+  github: centic9
+  #twitter: daattali
+  #patreon: DeanAttali
+  #youtube: c/daattali
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -172,16 +172,16 @@ footer-link-col: "#404040"
 #  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 # To use Staticman comments, uncomment the following section. You may leave the reCaptcha
-# section commented if you aren't using reCaptcha for spam protection. 
-# Using Staticman requires advanced knowledge, please consult 
-# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further 
-# instructions. For any support with staticman please direct questions to staticman and 
+# section commented if you aren't using reCaptcha for spam protection.
+# Using Staticman requires advanced knowledge, please consult
+# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further
+# instructions. For any support with staticman please direct questions to staticman and
 # not to BeautifulJekyll.
 staticman:
   repository : vincenttam/beautiful-jekyll # GitHub username/repository eg. "daattali/beautiful-jekyll"
   branch     : gh-pages # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
   endpoint   : https://secretman3.herokuapp.com/v3/entry/github/ # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
-#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
+#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well)
 #    siteKey  : # You need to apply for a site key on Google
 #    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
 
