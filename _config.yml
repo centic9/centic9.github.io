@@ -28,7 +28,8 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Repositories: "/repositories/index.html"
+  Stars/Forks: "/repositories/index.html"
+  Tests/Issues/PRs: "https://github.com/centic9/centic9.github.io/blob/gh-pages/STATUS.md"
 
 # --- Logo --- #
 
