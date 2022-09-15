@@ -1,5 +1,12 @@
 name: Beautiful Jekyll CI
-on: [push, pull_request]
+
+on: 
+  push:
+  pull_request:
+  schedule:
+    # refresh pages once per week on Wednesdays
+    - cron: '5 5 * * 3'
+
 jobs:
   build:
     name: Build Jekyll
