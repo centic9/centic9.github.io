@@ -1,4 +1,4 @@
-name: Beautiful Jekyll CI
+name: Periodic re-deploy of pages
 
 on: 
   push:
@@ -9,14 +9,15 @@ on:
 
 jobs:
   build:
-    name: Build Jekyll
+    name: Check-out and trigger re-build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build the site in the jekyll/builder container
+
+      # https://stackoverflow.com/questions/57921401/push-to-origin-from-github-action/58393457#58393457
+      - name: Perform dummy commit 
         run: |
-          export JEKYLL_VERSION=3.8
-          docker run \
-          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          -e PAGES_REPO_NWO=${{ github.repository }} \
-          jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+          git config --global user.name 'Dominik Stadler'
+          git config --global user.email 'dominik.stadler@gmx.at'
+          git commit -m 'rebuild pages' --allow-empty
+          git push origin gh-pages
