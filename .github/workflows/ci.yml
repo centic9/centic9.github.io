@@ -12,7 +12,7 @@ jobs:
     name: Check-out and trigger re-build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       # https://stackoverflow.com/questions/57921401/push-to-origin-from-github-action/58393457#58393457
       - name: Perform dummy commit 
